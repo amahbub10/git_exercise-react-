@@ -1,9 +1,11 @@
 import React from 'react'
 
 function Test() {
+    const [count, setCount] = React.useState(0)
     return (
         <div>
-            Hello Rana
+            <p>Hello Rana {count}</p>
+            <button onClick={ () => setCount(count + 1)}>Click Me</button>
         </div>
     )
 }
